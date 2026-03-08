@@ -1,0 +1,14 @@
+import math
+
+H = float(input("Enter Hydrogen ion concentration (mol/L): "))
+
+pH = -math.log10(H)
+
+print("pH =", pH)
+
+if pH < 7:
+    print("Acidic solution")
+elif pH == 7:
+    print("Neutral solution")
+else:
+    print("Basic solution")
