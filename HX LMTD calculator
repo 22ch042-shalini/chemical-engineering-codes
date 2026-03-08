@@ -1,0 +1,15 @@
+import math
+
+# LMTD Calculator
+
+Th1 = float(input("Hot fluid inlet temperature (°C): "))
+Th2 = float(input("Hot fluid outlet temperature (°C): "))
+Tc1 = float(input("Cold fluid inlet temperature (°C): "))
+Tc2 = float(input("Cold fluid outlet temperature (°C): "))
+
+dT1 = Th1 - Tc2
+dT2 = Th2 - Tc1
+
+LMTD = (dT1 - dT2) / math.log(dT1/dT2)
+
+print("Log Mean Temperature Difference =", LMTD)
