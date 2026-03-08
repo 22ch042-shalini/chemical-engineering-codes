@@ -1,1 +1,17 @@
+# Reynolds Number Calculator
 
+density = float(input("Enter fluid density (kg/m3): "))
+velocity = float(input("Enter velocity (m/s): "))
+diameter = float(input("Enter pipe diameter (m): "))
+viscosity = float(input("Enter viscosity (Pa.s): "))
+
+Re = (density * velocity * diameter) / viscosity
+
+print("Reynolds Number =", Re)
+
+if Re < 2100:
+    print("Flow is Laminar")
+elif Re < 4000:
+    print("Flow is Transitional")
+else:
+    print("Flow is Turbulent")
