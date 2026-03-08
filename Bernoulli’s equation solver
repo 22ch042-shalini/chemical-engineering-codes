@@ -1,0 +1,23 @@
+# Bernoulli Equation Solver
+
+P1 = float(input("Pressure at point 1 (Pa): "))
+V1 = float(input("Velocity at point 1 (m/s): "))
+Z1 = float(input("Height at point 1 (m): "))
+
+P2 = float(input("Pressure at point 2 (Pa): "))
+V2 = float(input("Velocity at point 2 (m/s): "))
+Z2 = float(input("Height at point 2 (m): "))
+
+rho = float(input("Fluid density (kg/m3): "))
+g = 9.81
+
+E1 = (P1/rho) + (V1**2)/2 + g*Z1
+E2 = (P2/rho) + (V2**2)/2 + g*Z2
+
+print("Energy at Point 1:", E1)
+print("Energy at Point 2:", E2)
+
+if abs(E1 - E2) < 0.01:
+    print("Bernoulli equation satisfied")
+else:
+    print("Energy loss present in system")
