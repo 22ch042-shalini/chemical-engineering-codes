@@ -1,0 +1,11 @@
+# Ideal Gas Law: PV = nRT
+
+P = float(input("Pressure (Pa): "))
+V = float(input("Volume (m3): "))
+T = float(input("Temperature (K): "))
+
+R = 8.314
+
+n = (P * V) / (R * T)
+
+print("Number of moles =", n)
