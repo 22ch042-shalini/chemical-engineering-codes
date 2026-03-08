@@ -1,0 +1,11 @@
+# Pump Power Calculation
+
+flowrate = float(input("Flow rate (m3/s): "))
+density = float(input("Fluid density (kg/m3): "))
+gravity = 9.81
+head = float(input("Pump head (m): "))
+efficiency = float(input("Efficiency (0-1): "))
+
+power = (density * gravity * flowrate * head) / efficiency
+
+print("Pump Power Required =", power, "Watts")
