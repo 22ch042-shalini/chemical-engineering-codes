@@ -1,0 +1,9 @@
+# Reaction Rate Calculator
+
+k = float(input("Rate constant (k): "))
+C = float(input("Reactant concentration (mol/L): "))
+n = float(input("Reaction order: "))
+
+rate = k * (C ** n)
+
+print("Reaction rate =", rate)
